@@ -46,10 +46,9 @@ Currently, a MicroSD Express breakbout is being developed to start this process.
 
 ## Status
 
-Work in progress.  
-We are actively developing the PCB layout, and testing.
+Work in progress. Currently, a M.2 breakout board and MicroSD Express breakout board are being designed, then produced. Files and BOM will be updated accordingly when available. 
 
-There is still the possibility that there are power-related issues (ie: power draw of M.2 drives is more than the Switch 2 can push out), but a basic level of power filtering has been added to hopefully help a connection be established.
+There is still the possibility that there are power-related issues (ie: power draw of M.2 drives is more than the Switch 2 can push out).
 
 ---
 
@@ -143,17 +142,17 @@ Please note: Row 2 is only operational in PCIe Mode. Row 2 is based on M1cha's (
 
 ### Wiring Schematic
 
-![alt text](image-2.png)
+![image](https://github.com/user-attachments/assets/4307b001-33de-480f-b8d2-8748455a149e)
 
-Still a WIP. Some discrepencies exist.
+Still a WIP. Some discrepencies may exist.
 
 ---
 
 ### MicroSD Express Dummy Card
 
-A dummy card has been created (thanks to M1cha!), for reference. Files have been attached.
+A dummy card has been created (thanks to M1cha's design examples!), for reference. Files have been attached.
 
-![alt text](45be96056c1b502acda375f99eb7bca.png)
+![image](https://github.com/user-attachments/assets/9f630c3f-1d3a-49ea-a7c7-d65ca15c190f)
 
 
 ---
