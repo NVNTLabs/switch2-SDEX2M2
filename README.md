@@ -82,7 +82,7 @@ The optional resistor is for the PERST# lane, may help with state when idle. Not
 
 ## PINOUT & LEGEND
 
-### MicroSD Express ➝ M.2 NVMe Mapping
+### MicroSD Express to M.2 NVME Pinout
 
 | microSD Express Pin  | PCIe Function | M.2 M-Key Pin(s) | M.2 Function         |
 | -------------------- | ------------- | ---------------- | -------------------- |
@@ -100,7 +100,7 @@ The optional resistor is for the PERST# lane, may help with state when idle. Not
 
 ---
 
-### M.2 NVMe Pin Definitions
+### M.2 NVMe Pinout
 
 | Pin     | Name     | Function                 |
 |---------|----------|--------------------------|
@@ -116,11 +116,11 @@ The optional resistor is for the PERST# lane, may help with state when idle. Not
 
 ---
 
-### MicroSD Express Pin Definitions (in SD Mode &* PCIe Mode)
+### MicroSD Express Pinout (in SD Mode &* PCIe Mode)
 
 | Pin | Row 1 Contact | SD Mode Function | PCIe Mode Function               |
 | --- | ------------- | -------------------- | ---------------------------- |
-| 1   | DAT2          | Data Line 2          | CLKREQ# (Power Mgmt)         |
+| 1   | DAT2          | Data Line 2          | CLKREQ# (Power / Signal Mgmt)         |
 | 2   | DAT3 / CD     | Data Line 3 / CD     | PERST# (Reset)               |
 | 3   | CMD           | Command Line         | CMD (unused in PCIe mode)    |
 | 4   | VDD           | 3.3V Power           | 3.3V Power                   |
@@ -135,7 +135,7 @@ The optional resistor is for the PERST# lane, may help with state when idle. Not
 | 9   | 1V8             | 1.8 Volts                     |
 | 10  | VSS2            | Ground for isolation          |
 | 11  | TX+             | PCIe TX+ (Transmit)           |
-| 12  | TX-             | PCIe TX+ (Transmit)           |
+| 12  | TX-             | PCIe TX- (Transmit)           |
 | 13  | VSS3            | Ground for isolation          |
 | 14  | RX-             | PCIe RX- (Receive)            |
 | 15  | RX+             | PCIe RX+ (Receive)            |
@@ -143,6 +143,32 @@ The optional resistor is for the PERST# lane, may help with state when idle. Not
 | 17  | 1V2             | 1.2 Volts                     |
 
 Please note: Row 2 is only operational in PCIe Mode. Row 2 is based on M1cha's (https://github.com/M1cha/sdexpress_pcbs) schematic.
+
+---
+
+### MicroSD Express Card to SD Express Slot Pinout
+
+| **MicroSD Express Pin** | **Function (PCIe Mode)**  | **SD Express Slot Pin** | **Function in Slot** | 
+| ----------------------- | ------------------------- | ----------------------- | -------------------- | 
+| 1 DAT2                  | CLKREQ#                   | 51                      | CLKREQ# (Power / Signal Mgmt) | 
+| 2 DAT3 / CD             | PERST#                    | 52                      | PERST# (Reset line)  |
+| 3 CMD                   | CMD (unused)              | —                       | CMD (unused in PCIe mode) | 
+| 4 VDD                   | 3.3V VDD                  | 18, 48                  | VDD                  |
+| 5 CLK                   | CLK (unused)              | —                       | —                    | 
+| 6 VSS                   | GND (VSS1)                | 17, 47, 49, 50          | GND                  |
+| 7 DAT0                  | REFCLK+                   | 45                      | REFCLK+              | 
+| 8 DAT1                  | REFCLK−                   | 46                      | REFCLK−              | 
+| 9 1V8                   | 1.8V VDD (VDD2)           | 1, 2, 3 (often shared)  | VDD 1.8 Volts        | 
+| 10 VSS2                 | GND (VSS2)                | 17, 47, etc.            | GND (GND Ground for isolation)| 
+| 11 TX+                  | TX+                       | 39                      | PCIe TX+ (Transmit)  |
+| 12 TX-                  | TX−                       | 41                      | PCIe TX- (Transmit)  |
+| 13 VSS3                 | GND  (VSS3)               | 17, 47, etc.            | GND (Ground for isolation)| 
+| 14 RX-                  | RX−                       | 35                      | PCIe RX- (Receive)|
+| 15 RX+                  | RX+                       | 37                      | PCIe RX+ (Receive)|
+| 16 VSS4                 | GND (VSS4)                | 17, 47, etc.            | GND (Ground for isolation)|                 
+| 17 1V2                  | 1.2V VDD (VDD3, optional) | —                       | Not used (May be unused)|
+
+Note: WIP
 
 ---
 
