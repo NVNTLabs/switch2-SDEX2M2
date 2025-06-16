@@ -63,8 +63,7 @@ There is still the possibility that there are power-related issues (ie: power dr
 - Use at your own risk. We are **not liable** for any damage to your drive, Switch 2, or other devices.
 - Only use **low-voltage, low-power M.2 2230 NVMe drives**.
 - **Do not use this in legacy MicroSD slots** (e.g., original Nintendo Switch).
-- This project is for **accessibility/educational use only**.  No commercial or piracy use permitted.
-
+  
 ---
 
 ## Bill of Materials (BOM)
