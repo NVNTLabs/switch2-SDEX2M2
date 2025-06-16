@@ -1,6 +1,10 @@
 # NVNT's SDEX2M2 (MicroSD Express to M.2) Adapter Project
 
-> Adapter for using M.2 2230 NVMe SSDs in the Nintendo Switch 2 via the MicroSD Express port.
+![image](https://github.com/user-attachments/assets/657212a5-0e45-479e-ab5f-9b9b10adbf6a)
+
+SDEX2M2 (Micro**SD** **Ex**press to **M2**) is an adapter for the Nintendo Switch 2 which converts the MicroSD Express slot to a NVME M.2 (M-Key) slot. Think MicroSD Express cards are difficult to find or expensive? Looking to expand your storage for cheaper? Just use the NVME M.2 SSD that you have, and/or can easily find! The project is open source hardware under the GPLv3 License.
+
+This project also encompasses the sister-project of "MicroSD Express to SD Express" adapter, which is a pin-to-pin conversion kit allowing full size SD Express cards to be used on the Nintendo Switch 2.
 
 ---
 
@@ -36,7 +40,9 @@ Currently, a MicroSD Express breakbout is being developed to start this process.
 - ✅ Create Footprints for MicroSD Express
 - ✅ Create Schematic for PCB layout
 - ✅ Create Dummy MicroSD Express Card V2
+- 🔲 Create M.2 Breakout for prototyping
 - 🔲 Create Dummy MicroSD Express card with breakout for prototyping
+- 🔲 Create MicroSD Express to SD Express Adapter
 - 🔲 Create routed PCB with Gerber/Drill files
 - ✅ Create BOM for fabrication and sourcing
 - 🔲 (Optional) Offload VDD externally for higher-power drives
