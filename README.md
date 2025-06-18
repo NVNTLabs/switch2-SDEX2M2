@@ -191,7 +191,7 @@ A dummy card has been created (thanks to M1cha's design examples!), for referenc
 
 ---
 
-### SDEXBreakout MicroSD Express Breakout Board
+### SDEX2M2 MicroSD Express Breakout Board
 
 A breakout board for MicroSD Express has been created (codenamed: "The Key"). Files have been attached in the repo.
 
