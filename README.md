@@ -9,18 +9,20 @@ This project also encompasses the sister-project of "MicroSD Express to SD Expre
 ---
 
 ## 📚 Table of Contents
-- Introduction
+- **Introduction**
   - [Goals](#goals)
   - [Status](#status)
   - [Warnings](#warnings)
-- Assets & Hardware Info
+- **Assets & Hardware Info**
   - [Bill of Materials (BOM)](#bill-of-materials-bom)
   - [PINOUT & LEGEND](#pinout--legend)
-    - [MicroSD Express ➝ M.2 NVMe Mapping](#microsd-express--m2-nvme-mapping)
-    - [M.2 NVMe Pin Definitions](#m2-nvme-pin-definitions)
-    - [MicroSD Express Pin Definitions](#microsd-express-pin-definitions)
+    - [MicroSD Express to M.2 NVMe Mapping](#microsd-express-to-m2-nvme-mapping)
+    - [M.2 NVMe Pinout](#m2-nvme-pinout)
+    - [MicroSD Express Pinout](#microsd-express-pinout)
+- **PCB's / Boards**
   - [Wiring Schematic](#wiring-schematic)
-  - [MicroSD Express Dummy Card](#wiring-schematic)
+  - [MicroSD Express Dummy Card](#microsd-express-dummy-card)
+  - [MicroSD Express Breakout Board](#sdexbreakout-microsd-express-breakout-board)
 
 ---
 
@@ -41,10 +43,10 @@ Currently, a MicroSD Express breakbout is being developed to start this process.
 - ✅ Create Schematic for PCB layout
 - ✅ Create Dummy MicroSD Express Card V2
 - 🔲 Create M.2 Breakout for prototyping
-- 🔲 Create Dummy MicroSD Express card with breakout for prototyping
+- ✅ Create MicroSD Express Breakout Board V0.1
 - 🔲 Create MicroSD Express to SD Express Adapter
 - 🔲 Create routed PCB with Gerber/Drill files
-- ✅ Create BOM for fabrication and sourcing
+- ✅ Create BOM for fabrication and sourcing (WIP)
 - 🔲 (Optional) Offload VDD externally for higher-power drives
 - 🔲 Produce & Test
 
@@ -52,7 +54,7 @@ Currently, a MicroSD Express breakbout is being developed to start this process.
 
 ## Status
 
-Work in progress. Currently, a M.2 breakout board and MicroSD Express breakout board are being designed, then produced. Files and BOM will be updated accordingly when available. 
+Work in progress. Currently, a MicroSD Express breakout board has been designed. Files have been attached. Schematics have been made as well. Next step is M.2 breakout board for prototyping. 
 
 There is still the possibility that there are power-related issues (ie: power draw of M.2 drives is more than the Switch 2 can push out).
 
@@ -81,7 +83,7 @@ The optional resistor is for the PERST# lane, may help with state when idle. Not
 
 ## PINOUT & LEGEND
 
-### MicroSD Express to M.2 NVME Pinout
+### MicroSD Express to M.2 NVMe Mapping
 
 | microSD Express Pin  | PCIe Function | M.2 M-Key Pin(s) | M.2 Function         |
 | -------------------- | ------------- | ---------------- | -------------------- |
@@ -95,7 +97,6 @@ The optional resistor is for the PERST# lane, may help with state when idle. Not
 | 15 (Row 2)           | RX+           | A22              | PCIe RX−             |
 | 4 (Row 1)            | 3.3V VDD      | B2, B3, B4       | 3.3V Power           |
 | 6, 10, 13, 16     | GND           | A1, A4, etc.     | Ground               |
-
 
 ---
 
@@ -115,7 +116,9 @@ The optional resistor is for the PERST# lane, may help with state when idle. Not
 
 ---
 
-### MicroSD Express Pinout (in SD Mode &* PCIe Mode)
+### MicroSD Express Pinout
+
+In SD Mode &* PCIe Mode
 
 | Pin | Row 1 Contact | SD Mode Function | PCIe Mode Function               |
 | --- | ------------- | -------------------- | ---------------------------- |
@@ -185,5 +188,13 @@ A dummy card has been created (thanks to M1cha's design examples!), for referenc
 
 ![image](https://github.com/user-attachments/assets/9f630c3f-1d3a-49ea-a7c7-d65ca15c190f)
 
+
+---
+
+### SDEXBreakout MicroSD Express Breakout Board
+
+A breakout board for MicroSD Express has been created (codenamed: "The Key"). Files have been attached in the repo.
+
+![244c4f2b9cad2d9e5d4ab24df1c923b](https://github.com/user-attachments/assets/0b88ecd9-bb47-4f98-92bc-e4bca0236b47)
 
 ---
