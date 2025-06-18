@@ -1,11 +1,11 @@
 {
   "board": {
-    "active_layer": 5,
+    "active_layer": 8,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [
-      "Net-(J1-PCIe_RX+)"
+      "/RX+"
     ],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
@@ -97,20 +97,20 @@
       13
     ],
     "col_widths": [
-      104,
-      94,
-      58,
-      43,
-      58,
-      58,
-      58,
+      83,
+      75,
       46,
-      58,
-      58,
-      58,
-      58,
-      58,
-      58
+      34,
+      46,
+      46,
+      46,
+      37,
+      46,
+      46,
+      46,
+      46,
+      46,
+      46
     ],
     "custom_group_rules": [],
     "expanded_rows": [],
