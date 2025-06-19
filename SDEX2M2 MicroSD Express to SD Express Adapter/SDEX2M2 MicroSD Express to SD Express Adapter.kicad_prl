@@ -1,7 +1,7 @@
 {
   "board": {
-    "active_layer": 0,
-    "active_layer_preset": "",
+    "active_layer": 2,
+    "active_layer_preset": "All Layers",
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [
@@ -51,7 +51,7 @@
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "ffffffff_ffffffff_ffffffff_fff7ffff",
+    "visible_layers": "ffffffff_ffffffff_ffffffff_ffffffff",
     "zone_display_mode": 0
   },
   "git": {
@@ -60,7 +60,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "SDEX2M2 Breakout Board.kicad_prl",
+    "filename": "SDEX2M2 MicroSD Express to SD Express Adapter.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
