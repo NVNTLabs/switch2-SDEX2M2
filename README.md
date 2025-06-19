@@ -22,7 +22,8 @@ This project also encompasses the sister-project of "MicroSD Express to SD Expre
 - **PCB's / Boards**
   - [Wiring Schematic](#wiring-schematic)
   - [MicroSD Express Dummy Card](#microsd-express-dummy-card)
-  - [MicroSD Express Breakout Board](#sdexbreakout-microsd-express-breakout-board)
+  - [MicroSD Express Breakout Board](#sdex2m2-microsd-express-breakout-board)
+  - [MicroSD Express to SD Express Prototype Adapter](#sdex2m2-microsd-express-to-sd-express-prototype-adapter)
 
 ---
 
@@ -30,9 +31,7 @@ This project also encompasses the sister-project of "MicroSD Express to SD Expre
 
 This is possible because the Nintendo Switch 2's MicroSD Express slot supports the SD Express 7.1 standard, which exposes a **true PCIe Gen3 x1 interface** and utilizes the **NVMe protocol** for communication.
 
-This adapter simply maps PCIe x1 from the Switch 2’s MicroSD Express slot to a standard M.2 2230 NVMe SSD. After further research and review from users, an onboard mcu will be required for the handshake provess with the Switch 2.
-
-Currently, a MicroSD Express breakbout is being developed to start this process.
+This adapter simply maps PCIe x1 from the Switch 2’s MicroSD Express slot to a standard M.2 2230 NVMe SSD. After further research and review from users, an onboard mcu/fpga will be required for the handshake provess with the Switch 2.
 
 ---
 
@@ -44,9 +43,11 @@ Currently, a MicroSD Express breakbout is being developed to start this process.
 - ✅ Create Dummy MicroSD Express Card V2
 - 🔲 Create M.2 Breakout for prototyping
 - ✅ Create MicroSD Express Breakout Board V0.1
-- 🔲 Create MicroSD Express to SD Express Adapter
+- ✅ Create MicroSD Express to SD Express Adapter (Experimental!)
 - 🔲 Create routed PCB with Gerber/Drill files
 - ✅ Create BOM for fabrication and sourcing (WIP)
+- 🔲 Create MicroSD Express to NVMe M.2 SSD Adapter with FPGA/MCU Proto
+- 🔲 Create MicroSD Express to NVMe M.2 SSD Dock/Flex Cable Setup
 - 🔲 (Optional) Offload VDD externally for higher-power drives
 - 🔲 Produce & Test
 
@@ -54,9 +55,11 @@ Currently, a MicroSD Express breakbout is being developed to start this process.
 
 ## Status
 
-Work in progress. Currently, a MicroSD Express breakout board has been designed. Files have been attached. Schematics have been made as well. Next step is M.2 breakout board for prototyping. 
+Work in progress. Currently, a MicroSD Express breakbout prototype has been developed, as well as the MicroSD Express to SD Express Adapter prototype has been developed. Work has commenced on the SDEX2M2 (MicroSD Express to M.2) itself.
 
-There is still the possibility that there are power-related issues (ie: power draw of M.2 drives is more than the Switch 2 can push out).
+Next step is M.2 breakout board for prototyping, and then the complete MicroSD Express to NVMe M.2 Drive (SDEX2M2) adapter.
+
+There is still the possibility that there are power-related issues (ie: power draw of M.2 drives is more than the Switch 2 can push out), so VDD will need to be offloaded most likely.
 
 ---
 
@@ -193,8 +196,18 @@ A dummy card has been created (thanks to M1cha's design examples!), for referenc
 
 ### SDEX2M2 MicroSD Express Breakout Board
 
-A breakout board for MicroSD Express has been created (codenamed: "The Key"). Files have been attached in the repo.
+A breakout board for MicroSD Express has been created (codenamed: "The Key"). Files have been attached in the repo. The purpose of this is for prototyping the full product.
 
 ![244c4f2b9cad2d9e5d4ab24df1c923b](https://github.com/user-attachments/assets/0b88ecd9-bb47-4f98-92bc-e4bca0236b47)
+
+---
+
+### SDEX2M2 MicroSD Express to SD Express Prototype Adapter
+
+An extremely experimental MicroSD Express to **Full Size** SD Express Slot adapter has been made. The purpose of this is to allow full size SD Express cards to be inserted into the Nintendo Switch 2.
+
+Please be aware that it is untested, **impedence and signal will be an issue due to lack of grounds**. This is a proof of concept.
+
+![image](https://github.com/user-attachments/assets/09f2fb1c-df9d-4064-afd0-2f9dfc34e5c7)
 
 ---
