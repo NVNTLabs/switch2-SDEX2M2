@@ -22,8 +22,9 @@ This project also encompasses the sister-project of "MicroSD Express to SD Expre
 - **PCB's / Boards**
   - [Wiring Schematic](#wiring-schematic)
   - [MicroSD Express Dummy Card](#microsd-express-dummy-card)
-  - [MicroSD Express Breakout Board](#sdex2m2-microsd-express-breakout-board)
-  - [MicroSD Express to SD Express Prototype Adapter](#sdex2m2-microsd-express-to-sd-express-prototype-adapter)
+  - [MicroSD Express Breakout Board](#microsd-express-breakout-board)
+  - [NVMe M.2 SSD Breakout Board](#nvme-m2-ssd-breakout-board)
+  - [MicroSD Express to SD Express Prototype Adapter](#microsdex2sdex-microsd-express-to-sd-express-prototype-adapter)
 
 ---
 
@@ -41,15 +42,13 @@ This adapter simply maps PCIe x1 from the Switch 2’s MicroSD Express slot to a
 - ✅ Create Footprints for MicroSD Express
 - ✅ Create Schematic for PCB layout
 - ✅ Create Dummy MicroSD Express Card V2
-- 🔲 Create M.2 Breakout for prototyping
+- ✅ Create M.2 Breakout for prototyping
 - ✅ Create MicroSD Express Breakout Board V0.1
 - ✅ Create MicroSD Express to SD Express Adapter (Experimental!)
-- 🔲 Create routed PCB with Gerber/Drill files
 - ✅ Create BOM for fabrication and sourcing (WIP)
-- 🔲 Create MicroSD Express to NVMe M.2 SSD Adapter with FPGA/MCU Proto
+- 🔲 Create MicroSD Express to NVMe M.2 SSD Without FPGA / MCU
+- 🔲 Create MicroSD Express to NVMe M.2 SSD Adapter with FPGA/MCU Proto (for handshake with Nintendo Switch 2)
 - 🔲 Create MicroSD Express to NVMe M.2 SSD Dock/Flex Cable Setup
-- 🔲 (Optional) Offload VDD externally for higher-power drives
-- 🔲 Produce & Test
 
 ---
 
@@ -194,19 +193,27 @@ A dummy card has been created (thanks to M1cha's design examples!), for referenc
 
 ---
 
-### SDEX2M2 MicroSD Express Breakout Board
+### MicroSD Express Breakout Board
 
-A breakout board for MicroSD Express has been created (codenamed: "The Key"). Files have been attached in the repo. The purpose of this is for prototyping the full product.
+A breakout board for MicroSD Express has been created (codenamed: "The Key"). Files have been attached in the repo. The purpose of this is for prototyping with a breadboard.
 
 ![244c4f2b9cad2d9e5d4ab24df1c923b](https://github.com/user-attachments/assets/0b88ecd9-bb47-4f98-92bc-e4bca0236b47)
 
 ---
 
-### SDEX2M2 MicroSD Express to SD Express Prototype Adapter
+### NVMe M2 SSD Breakout Board
+
+A breakout board for a NVMe M.2 SSD slot (M-key) has been created. Files have been attached in the repo. The purpose of this is for prototyping with a breadboard.
+
+![image](https://github.com/user-attachments/assets/f4b09836-43f7-4f9a-813d-f60c557102c0)
+
+---
+
+### MicroSDEX2SDEX MicroSD Express to SD Express Prototype Adapter
 
 An extremely experimental MicroSD Express to **Full Size** SD Express Slot adapter has been made. The purpose of this is to allow full size SD Express cards to be inserted into the Nintendo Switch 2.
 
-Please be aware that it is untested, **impedence and signal will be an issue due to lack of grounds**. This is a proof of concept.
+Please be aware that it is untested, **impedence and signal is probably an issue due to lack of grounds**. This is a proof of concept.
 
 ![image](https://github.com/user-attachments/assets/09f2fb1c-df9d-4064-afd0-2f9dfc34e5c7)
 
