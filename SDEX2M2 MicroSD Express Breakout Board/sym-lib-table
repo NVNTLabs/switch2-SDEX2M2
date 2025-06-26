@@ -1,4 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "m1cha")(type "KiCad")(uri "${KIPRJMOD}/../libraries/m1cha.kicad_sym")(options "")(descr ""))
-)

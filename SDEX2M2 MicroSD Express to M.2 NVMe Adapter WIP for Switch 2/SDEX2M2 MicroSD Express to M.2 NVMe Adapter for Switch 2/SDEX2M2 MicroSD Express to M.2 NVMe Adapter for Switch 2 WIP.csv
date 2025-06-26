@@ -1,0 +1,5 @@
+"Reference","Qty","Value","DNP","Exclude from BOM","Exclude from Board","Footprint","Datasheet"
+"J1","1","SDEX2M2 MicroSD Express to SD Express Adapter","","","","m1cha:usdex-male-open_bottom",""
+"J2","1","Conn_01x02_Pin","","","","Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical","~"
+"J4","1","10130616-067R2LF","","","","10130616-067R2LF:AMPHENOL_10130616-067R2LF",""
+"R1","1","R_Small (Pull-Up) 33kΩ","","","","Resistor_SMD:R_0603_1608Metric","~"
