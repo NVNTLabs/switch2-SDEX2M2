@@ -240,6 +240,8 @@ This hardware design is licensed under the **CERN Open Hardware License Version 
 
 The software/firmware design is licensed under the **GNU General Public License v3.0 (GPLv3)**
 
-See [LICENSE](LICENSE) and [LICENSE-HARDWARE.txt](LICENSE-HARDWARE.txt) for more information.
+The documentation and readme is licensed under the **Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA 4.0)**.
+
+See [LICENSE](LICENSE.txt), [LICENSE-HARDWARE.txt](LICENSE-HARDWARE.txt) and [LICENSE-DOCUMENTATION](LICENSE-DOCUMENTATION.TXT) for more information.
 
 ---
