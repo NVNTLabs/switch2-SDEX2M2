@@ -26,7 +26,7 @@ This project also encompasses the sister-project of "MicroSD Express to SD Expre
   - [NVMe M.2 SSD Breakout Board](#nvme-m2-ssd-breakout-board)
   - [MicroSD Express to SD Express Prototype Adapter](#microsd-express-to-sd-express-prototype-adapter)
   - [SDEX2SDEX MicroSD Express to NVMe M.2 Prototype Pin-to-Pin Adapter](#sdex2sdex-microsd-express-to-nvme-m2-prototype-pin-to-pin-adapter)
-- [License](license)
+- [License](#license)
 
 ---
 
@@ -240,6 +240,6 @@ This hardware design is licensed under the **CERN Open Hardware License Version 
 
 The software/firmware design is licensed under the **GNU General Public License v3.0 (GPLv3)**
 
-See [LICENSE](LICENSE.txt) and [LICENSE-HARDWARE.txt](LICENSE-HARDWARE.txt) for more information.
+See [LICENSE](LICENSE) and [LICENSE-HARDWARE.txt](LICENSE-HARDWARE.txt) for more information.
 
 ---
