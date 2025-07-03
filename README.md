@@ -242,6 +242,6 @@ The software/firmware design is licensed under the **GNU General Public License 
 
 The documentation and readme is licensed under the **Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA 4.0)**.
 
-See [LICENSE](LICENSE.txt), [LICENSE-HARDWARE.txt](LICENSE-HARDWARE.txt) and [LICENSE-DOCUMENTATION](LICENSE-DOCUMENTATION.TXT) for more information.
+See [LICENSE](LICENSE.txt), [LICENSE-HARDWARE.txt](LICENSE-HARDWARE.txt) and [LICENSE-DOCUMENTATION](LICENSE-DOCUMENTATION.txt) for more information.
 
 ---
