@@ -26,7 +26,7 @@ This project also encompasses the sister-project of "MicroSD Express to SD Expre
   - [NVMe M.2 SSD Breakout Board](#nvme-m2-ssd-breakout-board)
   - [MicroSD Express to SD Express Prototype Adapter](#microsd-express-to-sd-express-prototype-adapter)
   - [SDEX2SDEX MicroSD Express to NVMe M.2 Prototype Pin-to-Pin Adapter](#sdex2sdex-microsd-express-to-nvme-m2-prototype-pin-to-pin-adapter)
-
+- [License](license)
 
 ---
 
@@ -231,5 +231,15 @@ A production-ready (but experimental) 2-layer PCB for the SDEX2M2 MicroSD Expres
 Please note that this is a pin-to-pin adapter, and is not capable of completing the handshake with Nintendo Switch 2. It is for proof of concept, and is untested as of the time of writing.
 
 ![image](https://github.com/user-attachments/assets/aca24f83-d0b5-4648-ab6a-90056126c72f)
+
+---
+
+## License
+
+This hardware design is licensed under the **CERN Open Hardware License Version 2 – Strongly Reciprocal (CERN-OHL-S v2)**.
+
+The software/firmware design is licensed under the **GNU General Public License v3.0 (GPLv3)**
+
+See [LICENSE](LICENSE.txt) and [LICENSE-HARDWARE.txt](LICENSE-HARDWARE.txt) for more information.
 
 ---
