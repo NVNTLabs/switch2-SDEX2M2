@@ -49,6 +49,7 @@ This adapter simply maps PCIe x1 from the Switch 2’s MicroSD Express slot to a
 - ✅ Create MicroSD Express to SD Express Adapter (Experimental, Updated 2-layer PCB)
 - ✅ Create BOM for fabrication and sourcing (WIP)
 - ✅ Create MicroSD Express to NVMe M.2 SSD Pin to Pin Adapter (Proof of concept)
+- ✅ Create basic 3D printable enclosures/shells for the PCBs
 - 🔲 Create MicroSD Express to NVMe M.2 SSD Adapter with FPGA/MCU Proto (for handshake with Nintendo Switch 2)
 - 🔲 Create MicroSD Express to NVMe M.2 SSD Dock/Flex Cable Setup
 
@@ -56,13 +57,15 @@ This adapter simply maps PCIe x1 from the Switch 2’s MicroSD Express slot to a
 
 ## Status
 
-Work in progress. 
+Work in progress. Currently, a prototype with handshake capability with the Switch 2 and also designs for the final product design are being worked on.
 
-Currently, an early proof of concept prototype of the SDEX2M2 MicroSD Express to NVMe M.2 SSD Adapter has been made. 
+An early proof of concept prototype of the SDEX2M2 MicroSD Express to NVMe M.2 SSD Adapter has been made. 
 
 Additionally, production-ready (hopefully!) 2-layer PCBs for the MicroSD Express breakout board, and the NVMe breakout board have been uploaded.
 
-The MicroSD Express to SD Express (full size) adapter production ready board has been uploaded too.
+The MicroSD Express to SD Express (full size) adapter production ready prototype board has been uploaded as well.
+
+Basic 3D printable shells have been added too.
 
 ---
 
@@ -236,12 +239,15 @@ Please note that this is a pin-to-pin adapter, and is not capable of completing 
 
 ## License
 
+<img width="210" height="112" alt="NVNT SDEX2M2 License" src="https://github.com/user-attachments/assets/2b7edad0-3b00-4674-8fde-178494ccade5" />
+
+
 This hardware design is licensed under the **CERN Open Hardware License Version 2 – Strongly Reciprocal (CERN-OHL-S v2)**.
 
 The software/firmware design is licensed under the **GNU General Public License v3.0 (GPLv3)**
 
 The documentation and readme is licensed under the **Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA 4.0)**.
 
-See [LICENSE](LICENSE.txt), [LICENSE-HARDWARE.txt](LICENSE-HARDWARE.txt) and [LICENSE-DOCUMENTATION](LICENSE-DOCUMENTATION.txt) for more information.
+See [LICENSE](LICENSE.txt), [LICENSE-HARDWARE](LICENSE-HARDWARE.txt) and [LICENSE-DOCUMENTATION](LICENSE-DOCUMENTATION.txt) for more information.
 
 ---
