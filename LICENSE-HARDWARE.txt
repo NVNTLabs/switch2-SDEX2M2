@@ -1,7 +1,7 @@
 CERN Open Hardware License Version 2 - Strongly Reciprocal
 (CERN-OHL-S v2)
 
-Copyright © [Your Name or Project], [Year]
+Copyright © SDEX2M2, 2025.
 
 This hardware design is licensed under the CERN Open Hardware License v2 - Strongly Reciprocal.
 
