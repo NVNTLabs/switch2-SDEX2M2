@@ -22,6 +22,7 @@ This project also encompasses the sister-project of "MicroSD Express to SD Expre
 - **PCB's / Boards**
   - [Wiring Schematic](#wiring-schematic)
   - [MicroSD Express Dummy Card](#microsd-express-dummy-card)
+  - [MicroSD Express to FPC Flex Cable Connector](#microsd-express-to-fpc-flex-cable-connector)
   - [MicroSD Express Breakout Board](#microsd-express-breakout-board)
   - [NVMe M.2 SSD Breakout Board](#nvme-m2-ssd-breakout-board)
   - [MicroSD Express to SD Express Prototype Adapter](#microsd-express-to-sd-express-prototype-adapter)
@@ -50,8 +51,10 @@ This adapter simply maps PCIe x1 from the Switch 2’s MicroSD Express slot to a
 - ✅ Create BOM for fabrication and sourcing (WIP)
 - ✅ Create MicroSD Express to NVMe M.2 SSD Pin to Pin Adapter (Proof of concept)
 - ✅ Create basic 3D printable enclosures/shells for the PCBs
-- 🔲 Create MicroSD Express to NVMe M.2 SSD Adapter with FPGA/MCU Proto (for handshake with Nintendo Switch 2)
-- 🔲 Create MicroSD Express to NVMe M.2 SSD Dock/Flex Cable Setup
+- 🔲 Create MicroSD Express to NVMe M.2 SSD Adapter with FPGA/MCU Proto (for handshake with Nintendo Switch 2) **(in progress)**
+- ✅ Create MicroSD Express to Flex Cable Adapter
+- 🔲 Create Flex Cable to NVMe Adapter **(in progress)**
+- 🔲 Create MicroSD Express to NVMe M.2 SSD Dock **(in progress)**
 
 ---
 
@@ -59,13 +62,13 @@ This adapter simply maps PCIe x1 from the Switch 2’s MicroSD Express slot to a
 
 Work in progress. Currently, a prototype with handshake capability with the Switch 2 and also designs for the final product design are being worked on.
 
-An early proof of concept prototype of the SDEX2M2 MicroSD Express to NVMe M.2 SSD Adapter has been made. 
+An early proof of concept prototype of the SDEX2M2 MicroSD Express to NVMe M.2 SSD Adapter has been made, but it does lack Switch 2 compatibility. 
 
-Additionally, production-ready (hopefully!) 2-layer PCBs for the MicroSD Express breakout board, and the NVMe breakout board have been uploaded.
+For prototyping, production-ready 2-layer PCBs for the MicroSD Express breakout board, NVMe breakout board, and the MicroSD Express to FPC Connector (which may be used in the final design) have been uploaded.
 
-The MicroSD Express to SD Express (full size) adapter production ready prototype board has been uploaded as well.
+The MicroSD Express to SD Express adapter production ready prototype board has been uploaded as well, for users with full-size SD Express cards.
 
-Basic 3D printable shells have been added too.
+Basic 3D printable shells have been added too, for convenience.
 
 ---
 
@@ -196,6 +199,16 @@ Still a WIP. Some discrepencies may exist.
 A dummy card has been created (thanks to M1cha's design examples!), for reference. Files have been attached.
 
 ![image](https://github.com/user-attachments/assets/9f630c3f-1d3a-49ea-a7c7-d65ca15c190f)
+
+---
+
+
+### MicroSD Express to FPC Flex Cable Connector
+
+A MicroSD Express to Flex Cable Connector (FPC) has been created for reference. Schematic, Geberer and PCB files have been attached.
+
+<img width="1861" height="808" alt="image" src="https://github.com/user-attachments/assets/95d59788-1a3f-4cc0-a73a-3c443dbfbbd2" />
+
 
 ---
 
