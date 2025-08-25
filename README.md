@@ -26,7 +26,8 @@ This project also encompasses the sister-project of "MicroSD Express to SD Expre
   - [MicroSD Express Breakout Board](#microsd-express-breakout-board)
   - [NVMe M.2 SSD Breakout Board](#nvme-m2-ssd-breakout-board)
   - [MicroSD Express to SD Express Prototype Adapter](#microsd-express-to-sd-express-prototype-adapter)
-  - [SDEX2SDEX MicroSD Express to NVMe M.2 Prototype Pin-to-Pin Adapter](#sdex2sdex-microsd-express-to-nvme-m2-prototype-pin-to-pin-adapter)
+  - [SDEX2SDEX MicroSD Express to NVMe M.2 Prototype Pin-to-Pin Adapter WIP](#sdex2sdex-microsd-express-to-nvme-m2-prototype-pin-to-pin-adapter)
+  - [MicroSD Express Sniffer for Switch 2 Handshake](#microsd-express-sniffer)
 - [License](#license)
 
 ---
@@ -35,7 +36,9 @@ This project also encompasses the sister-project of "MicroSD Express to SD Expre
 
 This is possible because the Nintendo Switch 2's MicroSD Express slot supports the SD Express 7.1 standard, which exposes a **true PCIe Gen3 x1 interface** and utilizes the **NVMe protocol** for communication.
 
-This adapter simply maps PCIe x1 from the Switch 2’s MicroSD Express slot to a standard M.2 2230 NVMe SSD. After further research and review from users, an onboard mcu/fpga will be required for the handshake provess with the Switch 2.
+This adapter simply maps PCIe x1 from the Switch 2’s MicroSD Express slot to a standard M.2 2230 NVMe SSD. After further research and review from users, an onboard mcu/fpga will be required for the handshake process with the Switch 2.
+
+Currently, we've developed a sniffer board which will be used to facilitate this.
 
 ---
 
@@ -51,6 +54,7 @@ This adapter simply maps PCIe x1 from the Switch 2’s MicroSD Express slot to a
 - ✅ Create BOM for fabrication and sourcing (WIP)
 - ✅ Create MicroSD Express to NVMe M.2 SSD Pin to Pin Adapter (Proof of concept)
 - ✅ Create basic 3D printable enclosures/shells for the PCBs
+- ✅ Create MicroSD Express Sniffer PCB for capturing Nintendo Switch 2 Handshake (for getting NVMe drives to be functional!)
 - 🔲 Create MicroSD Express to NVMe M.2 SSD Adapter with FPGA/MCU Proto (for handshake with Nintendo Switch 2) **(in progress)**
 - ✅ Create MicroSD Express to Flex Cable Adapter
 - 🔲 Create Flex Cable to NVMe Adapter **(in progress)**
@@ -64,7 +68,9 @@ Work in progress. Currently, a prototype with handshake capability with the Swit
 
 An early proof of concept prototype of the SDEX2M2 MicroSD Express to NVMe M.2 SSD Adapter has been made, but it does lack Switch 2 compatibility. 
 
-For prototyping, production-ready 2-layer PCBs for the MicroSD Express breakout board, NVMe breakout board, and the MicroSD Express to FPC Connector (which may be used in the final design) have been uploaded.
+**For prototyping, a new MicroSD Express sniffer has been uploaded which is used for capturing the signal/handshake that the Nintendo Switch 2 uses for communicating with the MicroSD Express card. With this, we are one step closer to our goal!**
+
+Additionally, production-ready 2-layer PCBs for the MicroSD Express breakout board, NVMe breakout board, and the MicroSD Express to FPC Connector (which may be used in the final design) have been uploaded.
 
 The MicroSD Express to SD Express adapter production ready prototype board has been uploaded as well, for users with full-size SD Express cards.
 
@@ -247,6 +253,16 @@ A production-ready (but experimental) 2-layer PCB for the SDEX2M2 MicroSD Expres
 Please note that this is a pin-to-pin adapter, and is not capable of completing the handshake with Nintendo Switch 2. It is for proof of concept, and is untested as of the time of writing.
 
 ![image](https://github.com/user-attachments/assets/aca24f83-d0b5-4648-ab6a-90056126c72f)
+
+---
+
+### MicroSD Express Sniffer
+
+A experimental PCB MicroSD Express sniffer has been uploaded. **This is used for capturing the handshake signal/commands from the Nintendo Switch 2**.
+
+Please note: The MicroSD Express card slot on the PCB in the picture below is for placeholder only as it doesn't exactly match the dimensions of the one used in the actual PCB itself.
+
+<img width="1732" height="884" alt="image" src="https://github.com/user-attachments/assets/7ff3b147-5304-4530-bce7-ceb57fe0ad8f" />
 
 ---
 
