@@ -27,7 +27,7 @@ This project also encompasses the sister-project of "MicroSD Express to SD Expre
   - [NVMe M.2 SSD Breakout Board](#nvme-m2-ssd-breakout-board)
   - [MicroSD Express to SD Express Prototype Adapter](#microsd-express-to-sd-express-prototype-adapter)
   - [SDEX2SDEX MicroSD Express to NVMe M.2 Prototype Pin-to-Pin Adapter WIP](#sdex2sdex-microsd-express-to-nvme-m2-prototype-pin-to-pin-adapter)
-  - [MicroSD Express Sniffer for Switch 2 Handshake](#microsd-express-sniffer)
+  - [MicroSD Express Sniffer for Switch 2 Handshake (UPDATED!) - USE THIS FOR SIGNAL CAPTURING](#microsd-express-sniffer)
 - [License](#license)
 
 ---
@@ -55,6 +55,7 @@ Currently, we've developed a sniffer board which will be used to facilitate this
 - ✅ Create MicroSD Express to NVMe M.2 SSD Pin to Pin Adapter (Proof of concept)
 - ✅ Create basic 3D printable enclosures/shells for the PCBs
 - ✅ Create MicroSD Express Sniffer PCB for capturing Nintendo Switch 2 Handshake (for getting NVMe drives to be functional!)
+- ✅ Update MicroSD Express Sniffer PCB with new components and better grounding
 - 🔲 Create MicroSD Express to NVMe M.2 SSD Adapter with FPGA/MCU Proto (for handshake with Nintendo Switch 2) **(in progress)**
 - ✅ Create MicroSD Express to Flex Cable Adapter
 - 🔲 Create Flex Cable to NVMe Adapter **(in progress)**
@@ -258,11 +259,14 @@ Please note that this is a pin-to-pin adapter, and is not capable of completing 
 
 ### MicroSD Express Sniffer
 
-A experimental PCB MicroSD Express sniffer has been uploaded. **This is used for capturing the handshake signal/commands from the Nintendo Switch 2**.
+**Newly updated!**
 
-Please note: The MicroSD Express card slot on the PCB in the picture below is for placeholder only as it doesn't exactly match the dimensions of the one used in the actual PCB itself.
+A experimental PCB MicroSD Express sniffer has been uploaded and updated. **This is used for capturing the handshake signal/commands from the Nintendo Switch 2**, which will be used to create the final Switch 2 NVME M.2 Drive Adapter.
 
-<img width="1732" height="884" alt="image" src="https://github.com/user-attachments/assets/7ff3b147-5304-4530-bce7-ceb57fe0ad8f" />
+Now updated to use an Amphenol MicroSD Express Slot and with updated grounding for better signal isolation.
+
+<img width="1477" height="849" alt="SnifferV3" src="https://github.com/user-attachments/assets/bc40fd3b-7e0e-4ee8-bff3-5e1ff20065a7" />
+
 
 ---
 
