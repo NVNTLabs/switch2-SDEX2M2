@@ -26,7 +26,7 @@ This project also encompasses the sister-project of "MicroSD Express to SD Expre
   - [MicroSD Express Breakout Board](#microsd-express-breakout-board)
   - [NVMe M.2 SSD Breakout Board](#nvme-m2-ssd-breakout-board)
   - [MicroSD Express to SD Express Prototype Adapter](#microsd-express-to-sd-express-prototype-adapter)
-  - [SDEX2SDEX MicroSD Express to NVMe M.2 Prototype Pin-to-Pin Adapter WIP](#sdex2sdex-microsd-express-to-nvme-m2-prototype-pin-to-pin-adapter)
+  - [SDEX2M2 MicroSD Express to NVMe M.2 Prototype Pin-to-Pin Adapter WIP](#sdex2m2-microsd-express-to-nvme-m2-prototype-pin-to-pin-adapter)
   - [MicroSD Express Sniffer for Switch 2 Handshake (UPDATED!) - USE THIS FOR SIGNAL CAPTURING](#microsd-express-sniffer)
 - [License](#license)
 
@@ -247,11 +247,11 @@ Please be aware that it is untested as of the time of writing.
 
 ---
 
-### SDEX2SDEX MicroSD Express to NVMe M.2 Prototype Pin-to-Pin Adapter
+### SDEX2M2 MicroSD Express to NVMe M.2 Prototype Pin-to-Pin Adapter
 
 A production-ready (but experimental) 2-layer PCB for the SDEX2M2 MicroSD Express to NVMe M.2 adapter has been uploaded. 
 
-Please note that this is a pin-to-pin adapter, and is not capable of completing the handshake with Nintendo Switch 2. It is for proof of concept, and is untested as of the time of writing.
+Please note that this is a pin-to-pin adapter, and is **not capable of completing the handshake with Nintendo Switch 2**. It is a proof of concept board.
 
 ![image](https://github.com/user-attachments/assets/aca24f83-d0b5-4648-ab6a-90056126c72f)
 
@@ -261,7 +261,7 @@ Please note that this is a pin-to-pin adapter, and is not capable of completing 
 
 **Newly updated!**
 
-A experimental PCB MicroSD Express sniffer has been uploaded and updated. **This is used for capturing the handshake signal/commands from the Nintendo Switch 2**, which will be used to create the final Switch 2 NVME M.2 Drive Adapter.
+A experimental PCB MicroSD Express sniffer has been uploaded and updated. **This is used for capturing the handshake signal/commands from the Nintendo Switch 2**, which will be used to create the final SDEX2M2 Switch 2 NVME M.2 Drive Adapter.
 
 Now updated to use an Amphenol MicroSD Express Slot and with updated grounding for better signal isolation.
 
